@@ -1,0 +1,7 @@
+numpy
+scikit-learn
+sentence-transformers
+rank_bm25
+
+# Optional: enable GPT-4o-mini enhancement by setting OPENAI_API_KEY
+# openai
