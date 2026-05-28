@@ -1,6 +1,6 @@
-# Job-Candidate Retrieval Evaluation
+# Job-Candidate Retrieval & Ranking Evaluation
 
-Benchmarks BM25, dense, hybrid, and query-expansion strategies for job-candidate matching using **graded multi-relevance labels** on a controlled synthetic dataset.
+A retrieval and ranking evaluation system for job-candidate matching, benchmarking BM25, dense retrieval, hybrid retrieval, and index-side expansion under controlled vocabulary mismatch and graded multi-relevance evaluation.
 
 ---
 
@@ -18,9 +18,18 @@ The goal is to isolate how **retrieval strategy and input representation** affec
 
 ---
 
+## Key Results
+
+- Built a controlled retrieval evaluation framework with graded multi-relevance labels across 3,411 job-candidate relevance pairs.
+- Benchmarked BM25, dense retrieval, hybrid retrieval, and index-side expansion under vocabulary mismatch conditions.
+- Achieved best performance with Hybrid Retrieval (α=0.3), reaching NDCG@10 = 0.8637 (+2.0% over BM25 baseline).
+- Demonstrated that query expansion can reduce ranking discrimination in precision-sensitive multi-relevance settings.
+
+---
+
 ## Dataset Design
 
-### Synthetic + Controlled + Multi-Relevance
+### Controlled Multi-Relevance Evaluation Dataset
 
 | Property | Value |
 |----------|-------|
